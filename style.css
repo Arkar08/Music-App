@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+.container{
+    display: flex;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    flex-direction: column;
+}
+.playerListContainer{
+    margin:10px 20px;
+    cursor: pointer;
+    user-select: none;
+}
+.listitem{
+    padding:10px 20px;
+    border-bottom: 1px solid white;
+}
+.currentTime{
+    color:white;
+}
+.progress{
+    width:400px;
+    height: 8px;
+    background-color: black;
+}
+.progressId{
+    width: 0px;
+    height: 100%;
+    background-color: red;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+}
+.controls{
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 50px;
+    margin:10px;
+    cursor: pointer;
+    user-select: none;
+}
+.controls.pauseBtn{
+    display: none;
+}
